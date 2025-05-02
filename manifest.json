@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Multi-Tab Image Downloader",
+  "version": "1.0",
+  "description": "Downloads images from all open tabs in the current window when the extension icon is clicked.",
+  "permissions": [
+    "tabs",        
+    "scripting",   
+    "downloads",   
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Download Images from All Tabs",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
